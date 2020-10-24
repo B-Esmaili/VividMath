@@ -1,11 +1,12 @@
 {
-    "scripts":{
-        "dev" : "next start",
-        "build" : "next build"
-    },
+  "scripts": {
+    "dev": "next start",
+    "build": "next build"
+  },
   "dependencies": {
     "next": "^9.5.5",
-    "react":"17.0.1",
-    "react-dom":"17.0.1"
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "vercel": "^20.1.2"
   }
 }
