@@ -1,10 +1,10 @@
-
+import Layout from 'components/layout'
 
 const Index = ()=>{
 
-    return <div>
-            Hello From Next. Add Vercel Integration!
-        </div>
+    return <Layout>
+             
+        </Layout>
 };
 
 export default Index;
