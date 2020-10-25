@@ -8,6 +8,9 @@ const prisma = new PrismaClient();
 const options = {
     callbacks: {
         signIn: async (user, account, profile) => {
+            console.log('Authenticated');
+            console.log(JSON.stringify(user));
+            console.log(JSON.stringify(account));
             if (account.provider === 'google' &&
                 profile.verified_email === true
                 //&&
