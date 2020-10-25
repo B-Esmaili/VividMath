@@ -1,7 +1,9 @@
 {
     "scripts": {
         "dev": "next",
-        "build": "next build"
+        "build": "next build",
+        "build-init-db": "next build && npx prisma generate --experimental",
+        "build-migrate-db": "next build && npx prisma migrate up --experimental"
     },
     "dependencies": {
         "@prisma/client": "^2.9.0",
