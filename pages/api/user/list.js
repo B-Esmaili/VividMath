@@ -4,9 +4,9 @@ const prisma = new PrismaClient()
 
 const List = async (req, res) => {
 
-    let users = await prisma.user.findMany();
+    //let users = await prisma.user.findMany();
 
-    res.status(200).json({ success: true, users });
+    res.status(200).json({ success: true });
 
 }
 
