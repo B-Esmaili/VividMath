@@ -6,6 +6,19 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient();
 
 const options = {
+    callbacks: {
+        signIn: async (user, account, profile) => {
+            if (account.provider === 'google' &&
+                profile.verified_email === true
+                //&&
+                //profile.email.endsWith('@example.com')
+            ) {
+                return Promise.resolve(true)
+            } else {
+                return Promise.resolve(false)
+            }
+        },
+    },
     providers: [
         Providers.Google({
             clientId: "30713520212-f7buh1k8tiitoquk6reut1kdku7mo52i.apps.googleusercontent.com",
