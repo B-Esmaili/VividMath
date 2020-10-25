@@ -19,6 +19,9 @@ const Layout = ({
                 </SubMenu>
             </Menu>
         </ProSidebar>
+        {
+            children
+        }
     </LayoutRoot>
 }
 
