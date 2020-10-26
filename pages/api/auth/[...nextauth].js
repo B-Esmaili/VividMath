@@ -24,8 +24,8 @@ const options = {
     },
     providers: [
         Providers.Google({
-            clientId: "30713520212-f7buh1k8tiitoquk6reut1kdku7mo52i.apps.googleusercontent.com",
-            clientSecret: "FARA1MgTB9KtYJz9yg_TGBzp"
+            clientId: "122582821809-hulni15fr3cm5n77vp94kuoimq7ackjk.apps.googleusercontent.com",
+            clientSecret: "nR_dm-mgw2pOF2iKFp1l4czh"
         })
     ],
     adapter: Adapters.Prisma.Adapter({ prisma }),
